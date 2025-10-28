@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: linear-gradient(to top, rgba(242, 41, 122, 0.8), rgba(242, 53, 41, 0.8));
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+header a {
+    text-decoration: none;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    transition: all 0.2s;
+}
+
+header a:hover {
+    background-color: black;
+    color: #F23529;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.secao-hero {
+    background: #ffffff;
+    color: #60d8e3;
+}
+
+.secao-intro-pereciveis {
+    background: #60d8e3;
+    color: white;
+}
+
+.secao-carnes-info {
+    background: #ffef17;
+    color: #ffffff;
+}
+
+/* Seção de Frutas */
+.secao-frutas {
+    background: #24de4d;
+    color: white;
+}
+
+/* Seção de Ovos e Laticínios */
+.secao-ovos-laticinios {
+    background: #f78121;
+    color: white;
+}
+
+/* Seção de Título de Cuidados */
+.secao-cuidados-titulo {
+    background: #ffffff;
+    color: #42abb5;
+}
+
+/* Seção de Armazenamento */
+.secao-armazenamento {
+    background: #42abb5;
+    color: rgb(0, 0, 0);
+}
+
+/* Seção de Lista de Cuidados */
+.secao-cuidados-lista {
+    background: #fca2fc;
+    color: rgb(0, 0, 0);
+}
+
+/* Seção do Quiz */
+.secao-quiz {
+    background: #F5F5F5;
+    color: #333;
+}
+
+/* ========== FIM DAS CLASSES DE BACKGROUND ========== */
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.destaque {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+}
+
+.laranja-texto {
+    color: #ffffff;
+}
+
+.azul-texto {
+    color: #1B4965;
+}
+
+.lista {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 2;
+    color: #000000;
+}
+
+.lista-checks {
+    text-align: left;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+}
+
+.caixa {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    color: #000000
+}
+
+/* Caixas específicas para cada tipo de background */
+.secao-intro-pereciveis .caixa,
+.secao-ovos-laticinios .caixa,
+.secao-cuidados-titulo .caixa,
+.secao-cuidados-lista .caixa {
+    background: rgb(255, 255, 255);
+}
+
+.secao-frutas .caixa,
+.secao-armazenamento .caixa {
+    background: rgb(255, 255, 255);
+}
+
+.caixa-grande {
+    padding: 40px;
+}
+
+/* Classes específicas para cada imagem */
+.img-carnes-azul {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.img-carnes-branco {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+}
+
+.img-frutas {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+}
+
+.img-ovos {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+}
+
+.espacado {
+    letter-spacing: 0.3em;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.grande {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    color: white;
+}
+
+.texto-grande {
+    font-size: 1.4em;
+    line-height: 1.9;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para botão expansível */
+.btn-expandir {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.btn-expandir:hover {
+    transform: scale(1.2);
+}
+
+.btn-expandir-escuro {
+    color: #ffffff;
+}
+
+.seta-escura {
+    color: #ffffff;
+}
+
+.seta {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.seta.rotacionada {
+    transform: rotate(180deg);
+}
+
+.conteudo-expansivel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.conteudo-expansivel.aberto {
+    max-height: 2000px;
+}
+
+/* Estilos do Quiz */
+.quiz-container {
+    background-color: white;
+    position: relative;
+    top: 0px;
+    left: 525px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-container h2 {
+    color: #333;
+}
+
+.quiz-container .btn {
+    display: block;
+    width: 100%;
+    background-color: #667eea;
+    position: relative;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.quiz-container .btn:hover {
+    background-color: #5a67d8;
+}
+
+#next-btn {
+    display: none;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: #48bb78;
+    border-radius: 8px;
+    position: relative;
+    left: 298px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #38a169;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin: 20px 0 15px;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .destaque {
+        font-size: 1.1em;
+    }
+
+    .lista {
+        font-size: 0.95em;
+        line-height: 1.8;
+        padding: 0 10px;
+    }
+
+    .lista-checks {
+        font-size: 1.1em;
+    }
+
+    .caixa {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .caixa-grande {
+        padding: 25px;
+    }
+
+    .img-carnes-azul,
+    .img-carnes-branco,
+    .img-frutas,
+    .img-ovos {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .espacado {
+        letter-spacing: 0.2em;
+        font-size: 1.3em;
+    }
+
+    .grande {
+        font-size: 2.2em;
+        line-height: 1.1;
+    }
+
+    .texto-grande {
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+
+    .quiz-container {
+        top: 0;
+        left: 0;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #next-btn {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1em;
+        margin: 15px 0 10px;
+    }
+
+    p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .destaque {
+        font-size: 1em;
+    }
+
+    .lista {
+        font-size: 0.85em;
+        line-height: 1.6;
+        padding: 0 5px;
+    }
+
+    .lista-checks {
+        font-size: 0.95em;
+    }
+
+    .caixa {
+        padding: 15px;
+        margin: 15px 5px;
+        border-radius: 10px;
+    }
+
+    .caixa-grande {
+        padding: 20px;
+    }
+
+    .img-carnes-azul,
+    .img-carnes-branco,
+    .img-frutas,
+    .img-ovos {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+    .espacado {
+        letter-spacing: 0.15em;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .grande {
+        font-size: 1.6em;
+        line-height: 1.1;
+    }
+
+    .texto-grande {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+
+    .quiz-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .lista {
+        font-size: 0.75em;
+    }
+
+    .espacado {
+        letter-spacing: 0.1em;
+        font-size: 0.9em;
+    }
+
+    .grande {
+        font-size: 1.3em;
+    }
+
+    .texto-grande {
+        font-size: 0.85em;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/sacola.jpg" type="img/jpg">
+    <title>Produtos Perecíveis</title>
+    <link rel="stylesheet" href="../css/pagina3.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="../html/página1.html">Voltar</a>
+        </div>
+
+        <h1>Podutos Alimentícios</h1>
+
+        <div class="right">
+            <a href="../html/index.html">Avançar</a>
+        </div>
+    </header>
+
+    <section class="secao-hero">
+        <h1>CONSUMIR FRESCO É CUIDAR DE VOCÊ!</h1>
+        <h2>PRODUTOS PERECÍVEIS</h2>
+    </section>
+
+    <section class="secao-intro-pereciveis">
+        <h2>O QUE SÃO ALIMENTOS<br>PERECÍVEIS?</h2>
+        <p class="destaque">SÃO AQUELES QUE ESTRAGAM RAPIDAMENTE COMO:</p>
+        <h3>CARNES</h3>
+        <img src="../img/DuoCode (3).png" alt="Carnes" class="img-carnes-azul">
+    </section>
+
+    <section class="secao-carnes-info">
+        <h2 class="laranja-texto">CARNES</h2>
+        <img src="../img/DuoCode (2) (1).png" alt="Carnes" class="img-carnes-branco">
+        <h3 class="azul-texto">POR QUE CARNE ESTRAGA MAIS RÁPIDO DO QUE OUTROS ALIMENTOS?</h3>
+        <p>A carne estraga rápido porque é rica em água e nutrientes, um ambiente ideal para a proliferação de
+            microrganismos e bactérias que causam a deterioração do alimento. E podemos identificar a data de validade
+            com mais facilidade olhando a data na embalagem.</p>
+
+        <button class="btn-expandir btn-expandir-escuro" onclick="toggleConteudo('carnes')">
+            <span class="seta seta-escura" id="seta-carnes">▼</span>
+        </button>
+
+        <div class="conteudo-expansivel" id="carnes">
+            <div class="lista">
+                <p><strong>Congelamento:</strong> Embale bem a carne e congele. Ideal para longos períodos (meses).</p>
+                <p><strong>Refrigeração:</strong> Armazene a carne na geladeira por 1 a 3 dias, em embalagem hermética.
+                </p>
+                <p><strong>Desidratação:</strong> Retire a umidade da carne e armazene em local fresco. Boa para carne
+                    seca (jerky).</p>
+                <p><strong>Cura com sal:</strong> Use sal ou salmoura para preservar a carne. Comum para bacon e
+                    presunto.</p>
+                <p><strong>Defumação:</strong> Exponha a carne à fumaça para conservar e dar sabor. Pode ser refrigerada
+                    ou congelada depois.</p>
+                <p><strong>Marinado (óleo ou vinagre):</strong> Carne cozida pode ser preservada em óleo ou vinagre, em
+                    conserva.</p>
+                <p><strong>Sous-vide:</strong> Cozinhe a carne a baixa temperatura, depois armazene na geladeira ou
+                    congele.</p>
+                <p><strong>Evitar luz e ar:</strong> Mantenha a carne em ambientes escuros e bem embalados para evitar a
+                    deterioração.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-frutas">
+        <h2>FRUTAS</h2>
+        <img src="../img/DuoCode (1).png" alt="Frutas" class="img-frutas">
+        <h3>POR QUE FRUTAS ESTRAGAM MAIS RÁPIDO QUE OUTROS ALIMENTOS?</h3>
+        <p>As frutas estragam mais rápido do que muitos outros alimentos devido ao seu alto teor de água, que facilita a
+            proliferação de bactérias e fungos. E pra saber se essa fruta já ultrapassou seu prazo de validade basta
+            observar as alterações nas cores, textura ou até mesmo o aroma, além de partes murchas, macias ou com
+            manchas.</p>
+
+        <button class="btn-expandir" onclick="toggleConteudo('frutas')">
+            <span class="seta" id="seta-frutas">▼</span>
+        </button>
+
+        <div class="conteudo-expansivel" id="frutas">
+            <div class="caixa">
+                <div class="lista">
+                    <p><strong>Armazenamento correto:</strong><br>Frutas climatéricas (como maçã, banana) fora da
+                        geladeira até amadurecerem, depois refrigerar.<br>Frutas não climatéricas (como morango,
+                        melancia) direto na geladeira.</p>
+                    <p><strong>Conservantes naturais:</strong><br>Use vinagre diluído para higienizar (ex:
+                        morangos).<br>Sal ou cúrcuma ajudam a conservar algumas frutas.</p>
+                    <p><strong>Desidratação:</strong><br>Secar frutas como maçãs, bananas e morangos para prolongar a
+                        durabilidade.</p>
+                    <p><strong>Congelamento:</strong><br>Frutas como morango, banana, manga e abacaxi podem ser
+                        congeladas. Prefira cortar em pedaços pequenos e, se necessário, use limão para evitar
+                        escurecimento para armazenar por meses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-ovos-laticinios">
+        <h2>OVOS E LATICÍNIOS</h2>
+        <img src="../img/DuoCode.png" alt="Ovos e Laticínios" class="img-ovos">
+        <h3>POR QUE OVOS E LATICÍNIOS ESTRAGAM MAIS RÁPIDO QUE OUTROS ALIMENTOS?</h3>
+        <p>Os ovos estragam mais rapidamente que muitos outros alimentos devido à sua composição rica em proteínas e
+            água, que é um ambiente favorável à proliferação de microrganismos, e à sua casca porosa que, desprotegida
+            ou danificada, permite a entrada de bactérias e a perda de umidade, acelerando a deterioração.</p>
+
+        <button class="btn-expandir" onclick="toggleConteudo('ovos')">
+            <span class="seta" id="seta-ovos">▼</span>
+        </button>
+
+        <div class="conteudo-expansivel" id="ovos">
+            <div class="caixa">
+                <p>Para manter ovos frescos e seguros, armazene-os na embalagem original na parte mais fria da
+                    geladeira, longe da porta. Verifique a frescura chacoalhando o ovo ou colocando-o em água com sal.
+                    Evite rachaduras na casca e lave as mãos ao manuseá-los para prevenir contaminações. É possível
+                    congelar ovos, seguindo orientações adequadas.</p>
+                <p>Essas práticas também ajudam na conservação de laticínios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-cuidados-titulo">
+        <h2 class="espacado">ELES&nbsp;PRECISAM<br>DE</h2>
+        <h1 class="grande">CUIDADOS<br>ESPECIAIS</h1>
+    </section>
+
+    <section class="secao-armazenamento">
+        <h2 class="espacado">ARMAZENAMENTO<br>DE</h2>
+        <h1 class="grande">PRODUTOS<br>PERECÍVEIS</h1>
+        <div class="caixa caixa-grande">
+            <p class="texto-grande">Para armazenar os produtos corretamente, basta deixar os produtos refrigerados ou
+                até mesmo congelados, com a geladeira abaixo de 5° e freezer abaixo de -15°, em recipientes bem fechados
+                para evitar contaminação e perda de alguns nutrientes.</p>
+        </div>
+    </section>
+
+    <section class="secao-cuidados-lista">
+        <h2 class="espacado">CUIDADOS<br>QUE</h2>
+        <h1 class="grande">DEVEMOS<br>TOMAR</h1>
+        <div class="caixa caixa-grande">
+            <div class="lista lista-checks">
+                <p>✓ Conferir validade e consumir primeiro os mais antigos.</p>
+                <p>✓ Lavar mãos, frutas, verduras e utensílios.</p>
+                <p>✓ Usar sacola térmica e não expor ao sol.</p>
+                <p>✓ Descartar se tiver cheiro, cor ou embalagem estranha.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-quiz">
+        <div class="quiz-container">
+            <h2 id="question">Carregando pergunta...</h2>
+            <div id="answers"></div>
+            <button id="next-btn">Próxima</button>
+        </div>
+    </section>
+
+    <script src="../Js/pagina3.js"></script>
+
+</body>
+
+</html>
