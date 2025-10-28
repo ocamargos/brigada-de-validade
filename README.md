@@ -1,1 +1,0 @@
-# Brigada-de-validade
